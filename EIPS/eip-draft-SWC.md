@@ -24,7 +24,6 @@ The goals of the SWC scheme are as follows:
 - Provide a straightforward way to classify weaknesses in smart contract systems.
 - Provide a straightforward way to specify the weakness(es) that lead to a vulnerability in a smart contract system. 
 - Define a common language for describing weaknesses in smart contract systems' architecture, design, and code.
-- Achieve industry consensus on what programming patterns qualify as "weaknesses" that should be avoided.
 - Train and increase the performance of smart contract security analysis tools.
 
 
