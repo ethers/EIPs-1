@@ -42,7 +42,7 @@ While recognizing the current gap, the SWC does not aim to reinvent the wheel in
 ## Specification
 <!--The technical specification should describe the syntax and semantics of any new feature. The specification should be detailed enough to allow competing, interoperable implementations for any of the current Ethereum platforms (go-ethereum, parity, cpp-ethereum, ethereumj, ethereumjs, and [others](https://github.com/ethereum/wiki/wiki/Clients)).-->
 
-Before the discussing the SWC specification it is important to describe the terminology used:
+Before discussing the SWC specification it is important to describe the terminology used:
 
 - Weakness: A software error or mistake that in the right conditions can by itself or coupled with other weaknesses lead to a vulnerability. 
 - Vulnerability: A weakness or multiple weaknesses which directly or indirectly lead to an undesirable state change in a smart contract system. 
