@@ -46,7 +46,7 @@ Before discussing the SWC specification it is important to describe the terminol
 - Weakness: A software error or mistake that in the right conditions can by itself or coupled with other weaknesses lead to a vulnerability. 
 - Vulnerability: A weakness or multiple weaknesses which directly or indirectly lead to an undesirable state change in a smart contract system. 
 - Variant: A specific weakness that is described in a very low detail specific to Ethereum smart contracts. Each variant is assigned an unique SWC ID.
-- Base/Class: An abstract base description of a class of weaknesses. CWE has a wide range of base/class types that provide a meaningful hierarchal context for smart contract specific weakness variants. Every SWC ID is related to a Base or Class weakness type in the CWE.
+- Relationships: CWE has a wide range of _Base_ and _Class_ types that group weaknesses on higher abstraction layers. The CWE uses _Relationships_ to link SWC smart contract weakness variants to existing _Base_ or _Class_ CWE types. This relationship will be used to provide context on how SWCs are linked in the wider field of software security weaknesses and to be able generate useful visualisations and insights through data sets. In its current revision it is proposed to link a SWC to its closest parent in the CWE. 
 - SWC ID: A numeric identifier linked to a variant (e.g. SWC-101).
 - Test Case: A test case constitutes a micro-sample or real-world smart contract that demonstrates concrete instances of one or multiple SWC variants. Test cases serve as the basis for meaningful weakness classification and are useful to security analysis tool developers.
 
@@ -57,7 +57,7 @@ The SWC in its most basic form links a numeric identifier to a weakness variant.
 A SWC definition is formated in mark down to allow good readability and tools to process them easily. It consists of the following attributes. 
 
 - Title: A name for the weakness that points to the technical root cause.
-- Base/Class ID: Links a CWE base or class type to the variant. The _Integer Overflow and Underflow_ variant is linked to [CWE-682 - Incorrect Calculation](https://cwe.mitre.org/data/definitions/682.html).
+- Relationships: Links a CWE _Base_ or _Class_ type to its CWE variant. The _Integer Overflow and Underflow_ variant for example is linked to [CWE-682 - Incorrect Calculation](https://cwe.mitre.org/data/definitions/682.html).
 - Description: Describes the nature and potential impact of the weakness on the contract system. 
 - Remediation: Describes ways on how to fix the weakness. 
 - References: Links to external references that contain relevant additional information on the weakness.
@@ -73,7 +73,7 @@ Test cases include crafted as well as real-world samples of vulnerable smart con
 ## Implementation
 <!--The implementations must be completed before any EIP is given status "Final", but it need not be completed before the EIP is accepted. While there is merit to the approach of reaching consensus on the specification and rationale before writing code, the principle of "rough consensus and running code" is still useful when it comes to resolving many discussions of API details.-->
 
-The [Smart Contract Weakness Classification registry](https://github.com/SmartContractSecurity/SWC-registry) has been created on Github. 
+The Smart Contract Weakness Classification registry located in this [Github repository] (https://github.com/SmartContractSecurity/SWC-registry) uses the SWC scheme proposed in this EIP. The following commmunity members have contributed to SWC registry: Bernhard Muller (@b-mueller), Rocky Bernstein (@rocky), Aleksandr Sobolev (@s0b0lev), Feist Josselin (@montyly), N/A (@vl-ti)
 
 All works in the repository are licensed under GNU GPLv3. 
 
