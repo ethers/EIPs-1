@@ -73,7 +73,7 @@ Test cases include crafted as well as real-world samples of vulnerable smart con
 ## Implementation
 <!--The implementations must be completed before any EIP is given status "Final", but it need not be completed before the EIP is accepted. While there is merit to the approach of reaching consensus on the specification and rationale before writing code, the principle of "rough consensus and running code" is still useful when it comes to resolving many discussions of API details.-->
 
-The Smart Contract Weakness Classification registry located in this [Github repository] (https://github.com/SmartContractSecurity/SWC-registry) uses the SWC scheme proposed in this EIP. The following commmunity members have contributed to SWC registry: Bernhard Muller (@b-mueller), Rocky Bernstein (@rocky), Aleksandr Sobolev (@s0b0lev), Feist Josselin (@montyly), N/A (@vl-ti)
+The Smart Contract Weakness Classification registry located in this [Github repository] (https://github.com/SmartContractSecurity/SWC-registry) uses the SWC scheme proposed in this EIP. 
 
 All works in the repository are licensed under GNU GPLv3. 
 
