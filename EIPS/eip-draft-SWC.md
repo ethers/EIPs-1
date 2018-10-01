@@ -70,8 +70,7 @@ Test cases include crafted as well as real-world samples of vulnerable smart con
 2. A JSON file generated with solc that contains the byte code, AST and source code mappings. 
 3. The YAML configuration file defining the types and number of weaknesses contained in the contract sample. Location information can be provided optionally through byte code offset as well as line numbers. Test case YAML configuration files can be verified with the following schema.
 
-```
-
+```YAML
 description:
   type: string
   required: true
