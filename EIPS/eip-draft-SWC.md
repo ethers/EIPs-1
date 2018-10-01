@@ -68,7 +68,26 @@ Test cases include crafted as well as real-world samples of vulnerable smart con
 
 1. A contract sample containing zero or more weaknesses. 
 2. A JSON file generated with solc that contains the byte code, AST and source code mappings. 
-3. The configuration file defining the types and number of weaknesses contained in the contract sample. 
+3. The YAML configuration file defining the types and number of weaknesses contained in the contract sample. Location information can be provided optionally through byte code offset as well as line numbers. Test case YAML configuration files can be verified with the following schema.
+
+```
+
+description:
+  type: string
+  required: true
+issues:
+- id:
+    type: string
+    required: true
+  count:
+    type: number
+    required: true
+  locations:
+  - bytecode_offsets:
+    - type: number
+    line_numbers:
+    - type: number
+```
 
 ## Implementation
 <!--The implementations must be completed before any EIP is given status "Final", but it need not be completed before the EIP is accepted. While there is merit to the approach of reaching consensus on the specification and rationale before writing code, the principle of "rough consensus and running code" is still useful when it comes to resolving many discussions of API details.-->
