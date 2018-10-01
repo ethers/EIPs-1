@@ -32,7 +32,7 @@ The goals of the SWC scheme are as follows:
 
 In the software security industry, it is a widely accepted practice to use a common terminology and to classify security related bugs and errors with a standardized scheme. While this has not stopped vulnerabilities from appearing in software, it has helped communities focusing on web applications, network protocols, IOT devices and various other fields to educate users and developers to understand the nature of security related issues in their software. It has also allowed the security community to quickly understand vulnerabilities that occur in production systems to perform root cause analysis or triage findings from various security analysis sources. In recent years various organizations and companies also published vulnerability data to find the most widespread security issues based on collected vulnerability data. Two examples that are widely used and referred to are the [SANS TOP 25 Most Dangerous Software Errors](https://www.sans.org/top25-software-errors) and the [OWASP TOP 10](https://www.owasp.org/index.php/Top_10-2017_Top_10). None of those publications would have been possible without a common classification scheme. 
 
-At present no such weakness classification scheme exists to identify weaknesses specific to Ethereum Smart Contracts. Common language and awareness of security weaknesses is mostly derived from academic papers, best practice guides and published articles. Findings from audit reports and security tool analysis add to the wide range of terminologies that is used to describe the discovered weaknesses. It is often time consuming to understand the technical root cause and the risk associated to findings from different sources even for security experts. 
+At present no such weakness classification scheme exists for weaknesses specific to Ethereum Smart Contracts. Common language and awareness of security weaknesses is mostly derived from academic papers, best practice guides and published articles. Findings from audit reports and security tool analysis add to the wide range of terminologies that is used to describe the discovered weaknesses. It is often time consuming to understand the technical root cause and the risk associated to findings from different sources even for security experts. 
 
 ## Rationale 
 
@@ -54,7 +54,7 @@ The SWC in its most basic form links a numeric identifier to a weakness variant.
 
 **SWC definition**  
 
-A SWC definition is formated in mark down to allow good readability and tools to process them easily. It consists of the following attributes. 
+A SWC definition is formated in markdown to allow good readability and tools to process them easily. It consists of the following attributes. 
 
 - Title: A name for the weakness that points to the technical root cause.
 - Relationships: Links a CWE _Base_ or _Class_ type to its CWE variant. The _Integer Overflow and Underflow_ variant for example is linked to [CWE-682 - Incorrect Calculation](https://cwe.mitre.org/data/definitions/682.html).
@@ -66,7 +66,7 @@ A SWC definition is formated in mark down to allow good readability and tools to
 
 Test cases include crafted as well as real-world samples of vulnerable smart contracts. A single test case consists of three parts:
 
-1. A contract sample containing zero or more weaknesses. 
+1. A smart contract sample containing zero or more weaknesses. 
 2. A JSON file generated with solc that contains the byte code, AST and source code mappings. 
 3. The YAML configuration file defining the types and number of weaknesses contained in the contract sample. Location information can be provided optionally through byte code offset as well as line numbers. Test case YAML configuration files can be verified with the following schema.
 
