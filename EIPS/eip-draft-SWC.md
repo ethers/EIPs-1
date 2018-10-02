@@ -44,7 +44,7 @@ While recognizing the current gap, the SWC does not aim to reinvent the wheel in
 Before discussing the SWC specification it is important to describe the terminology used:
 
 - Weakness: A software error or mistake that in the right conditions can by itself or coupled with other weaknesses lead to a vulnerability. 
-- Vulnerability: A weakness or multiple weaknesses which directly or indirectly lead to an undesirable state change in a smart contract system. 
+- Vulnerability: A weakness or multiple weaknesses which directly or indirectly lead to an undesirable state in a smart contract system. 
 - Variant: A specific weakness that is described in a very low detail specific to Ethereum smart contracts. Each variant is assigned an unique SWC ID.
 - Relationships: CWE has a wide range of _Base_ and _Class_ types that group weaknesses on higher abstraction layers. The CWE uses _Relationships_ to link SWC smart contract weakness variants to existing _Base_ or _Class_ CWE types. _Relationships_ are  used to provide context on how SWCs are linked to the wider group of software security weaknesses and to be able generate useful visualisations and insights through issue data sets. In its current revision it is proposed to link a SWC to its closest parent in the CWE. 
 - SWC ID: A numeric identifier linked to a variant (e.g. SWC-101).
