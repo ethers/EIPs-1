@@ -91,9 +91,7 @@ issues:
 ## Implementation
 <!--The implementations must be completed before any EIP is given status "Final", but it need not be completed before the EIP is accepted. While there is merit to the approach of reaching consensus on the specification and rationale before writing code, the principle of "rough consensus and running code" is still useful when it comes to resolving many discussions of API details.-->
 
-The Smart Contract Weakness Classification registry located in this [Github repository](https://github.com/SmartContractSecurity/SWC-registry) uses the SWC scheme proposed in this EIP. 
-
-All works in the repository are licensed under GNU GPLv3. 
+The Smart Contract Weakness Classification registry located in this [Github repository](https://github.com/SmartContractSecurity/SWC-registry) uses the SWC scheme proposed in this EIP. A Github Pages rendered version is also available on [here](https://smartcontractsecurity.github.io/SWC-registry/).
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
